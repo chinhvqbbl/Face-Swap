@@ -92,7 +92,7 @@ The API will be available at `http://localhost:5000`
 ## Requirements / Yêu cầu
 
 ### Backend Requirements
-* Python 3.9+
+* Python 3.10
 * Flask
 * OpenCV
 * InsightFace
