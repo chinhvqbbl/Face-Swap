@@ -31,8 +31,12 @@ pip install opencv-python numpy insightface onnxruntime
 ```
 
 3. Download model / Tải model:
-- Download file `inswapper_128.onnx` from [Google Drive](your_google_drive_link)
-- Place it in the root directory / Đặt file vào thư mục gốc của project
+* Download file `inswapper_128.onnx` from [Huggingface](https://huggingface.co/ezioruan/inswapper_128.onnx)
+* Place it in the root directory / Đặt file vào thư mục gốc của project
+
+> ✅ **Important / Quan trọng**:
+> Bạn **bắt buộc phải cài** `Desktop development with C++` thông qua **Visual Studio Installer**
+> Nếu không, ONNX Runtime và InsightFace sẽ lỗi khi khởi tạo model.
 
 ## Usage / Cách sử dụng
 
@@ -46,18 +50,19 @@ python main.py
 
 ## Requirements / Yêu cầu
 
-- Python 3.7+
-- OpenCV
-- InsightFace
-- ONNX Runtime
-- NumPy
+* Python 3.9+
+* OpenCV
+* InsightFace
+* ONNX Runtime
+* NumPy
+* ✅ Visual Studio (phải cài Workload: **Desktop development with C++**)
 
 ## Notes / Lưu ý
 
-- The source image (`face.png`) should contain a clear, front-facing face
-- The target image (`target.png`) should contain the face(s) you want to swap
-- Ảnh nguồn (`face.png`) nên chứa một khuôn mặt rõ ràng, nhìn thẳng
-- Ảnh đích (`target.png`) nên chứa (các) khuôn mặt bạn muốn hoán đổi
+* The source image (`face.png`) should contain a clear, front-facing face
+* The target image (`target.png`) should contain the face(s) you want to swap
+* Ảnh nguồn (`face.png`) nên chứa một khuôn mặt rõ ràng, nhìn thẳng
+* Ảnh đích (`target.png`) nên chứa (các) khuôn mặt bạn muốn hoán đổi
 
 ## License / Giấy phép
 
