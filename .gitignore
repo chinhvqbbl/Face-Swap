@@ -1,0 +1,23 @@
+# Model file
+inswapper_128.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Image files
+result.jpg
+
+# OS
+.DS_Store
+Thumbs.db 
